@@ -6,15 +6,13 @@ int main()
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	int a, b;
+	long long a, b;
 
 	cin >> a >> b;
 	
 	if (a > b)
 	{
-		int c = a;
-		a = b;
-		b = c;
+		swap(a, b);
 	}
 
 	if (a == b || b - a == 1)
