@@ -1,6 +1,6 @@
 # [level 1] 옹알이 (2) - 133499 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133499?language=javascript) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/133499?language=cpp) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 09월 09일 10:28:20
+2024년 09월 09일 10:29:02
 
 ### 문제 설명
 
