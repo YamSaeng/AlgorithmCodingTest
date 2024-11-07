@@ -1,13 +1,24 @@
 function solution(citations) {
     var answer = 0;
 
-    citations.sort((a, b) => b - a);
-
     const length = citations.length;
     for (let i = 0; i < length; i++) {
-        if (citations[i] >= i + 1) {
-            answer = i + 1;
-        }    
+        let hIndex = citations[i];
+
+        let maxCount = 0;
+        let minCount = 0;
+        for (let j = 0; j < length; j++) {
+            if (citations[j] >= hIndex) {
+                maxCount++;
+            } else if (hIndex >= citations[j]) {
+                minCount++;
+            }
+        }
+
+        if (hIndex == maxCount
+            && hIndex >= minCount) {
+            answer = hIndex;
+        }
     }
 
     return answer;
